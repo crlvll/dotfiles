@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "{{< newthought >}}{cursor}{{< \/newthought >}}",
+    "uid" : "9EAA0309-8BDD-43C3-BC9B-F62CC719A3C6",
+    "name" : "Newthought",
+    "keyword" : "<n"
+  }
+}

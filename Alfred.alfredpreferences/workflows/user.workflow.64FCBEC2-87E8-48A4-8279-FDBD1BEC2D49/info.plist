@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>net.lemonlee.timer</string>
+	<key>connections</key>
+	<dict>
+		<key>25563808-16C3-4522-B88C-F4461851A670</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>742BDCFC-E4F9-4AD7-AC75-6BC264A733D1</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>62A504C0-1C8D-4B4C-AD60-78F4DD42F1C2</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>25563808-16C3-4522-B88C-F4461851A670</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Nigel Smith</string>
+	<key>description</key>
+	<string>Control Timer (https://itunes.apple.com/us/app/pomodoro/id799574890) from Alfred</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Timer control</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string>osascript -e 'set text item delimiters to "\n"' -e 'tell application "Timer"' -e '{query}' -e 'end tell'</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>25563808-16C3-4522-B88C-F4461851A670</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>pom</string>
+				<key>queuedelaycustom</key>
+				<integer>1</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<false/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>script</key>
+				<string>query = "{query}"
+
+options = {'start' : 'Start a pomodoro', 'reset' : 'Reset current pomodoro', 'force completion' : 'Force completion of current pomodoro', 'external interrupt' : 'External interrupt of current pomodoro' , 'internal interrupt' : 'Internal interrupt of current pomodoro', 'resume' : 'Resume interrupted pomodoro' }
+
+print('&lt;?xml version="1.0"?&gt;&lt;items&gt;')
+if query == "":
+	for optionkey, optiontitle in options.iteritems():
+		print('&lt;item uid="' + optionkey + '" arg="' + optionkey + '"&gt;&lt;title&gt;' + optiontitle + '&lt;/title&gt;&lt;icon&gt;icon.png&lt;/icon&gt;&lt;/item&gt;')
+else:
+	for optionkey, optiontitle in options.iteritems():
+	    if query in optionkey:
+			print('&lt;item uid="' + optionkey + '" arg="' + optionkey + '"&gt;&lt;title&gt;' + optiontitle + '&lt;/title&gt;&lt;icon&gt;icon.png&lt;/icon&gt;&lt;/item&gt;')
+		         
+print('&lt;/items&gt;')
+</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Do something with your pomodoro timer!</string>
+				<key>title</key>
+				<string>Pomodoro</string>
+				<key>type</key>
+				<integer>3</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>62A504C0-1C8D-4B4C-AD60-78F4DD42F1C2</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>{query}</string>
+				<key>title</key>
+				<string>Pomodoro</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>742BDCFC-E4F9-4AD7-AC75-6BC264A733D1</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string>Get it (compile the code) from https://github.com/ugol/pomodoro, http://pomodoro.ugolandini.com/</string>
+	<key>uidata</key>
+	<dict>
+		<key>25563808-16C3-4522-B88C-F4461851A670</key>
+		<dict>
+			<key>xpos</key>
+			<integer>500</integer>
+			<key>ypos</key>
+			<real>10</real>
+		</dict>
+		<key>62A504C0-1C8D-4B4C-AD60-78F4DD42F1C2</key>
+		<dict>
+			<key>xpos</key>
+			<integer>300</integer>
+			<key>ypos</key>
+			<real>10</real>
+		</dict>
+		<key>742BDCFC-E4F9-4AD7-AC75-6BC264A733D1</key>
+		<dict>
+			<key>xpos</key>
+			<integer>700</integer>
+			<key>ypos</key>
+			<real>10</real>
+		</dict>
+	</dict>
+	<key>webaddress</key>
+	<string>https://github.com/lemonlee/alfred-timer</string>
+</dict>
+</plist>

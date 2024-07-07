@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "{{< sidenote >}}{cursor}{{< \/sidenote >}}",
+    "uid" : "617C88E2-D1B1-4410-BBEE-20DBB1CE1C7B",
+    "name" : "sidenote",
+    "keyword" : "<s"
+  }
+}

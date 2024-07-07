@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "{{< blockquote cite=\"www.shawnohare.com\" footer=\"Shawn\" >}}\n    Une citation{cursor}\n{{< \/blockquote >}}",
+    "uid" : "61FD5ACD-5497-491B-945E-DF18F458801F",
+    "name" : "Blockquote",
+    "keyword" : "<b"
+  }
+}

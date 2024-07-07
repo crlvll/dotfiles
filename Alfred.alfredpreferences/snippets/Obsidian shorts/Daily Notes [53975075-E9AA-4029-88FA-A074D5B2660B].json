@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "# **{date:full}**  \nlinks : [[{date -1d:yyyy-MM-dd}]] <== Aujourd'hui ==> [[{date +1d:yyyy-MM-dd}]]\ntags : #dailynotes #workingsheet  \n\n---  \n\n### Day Plan:\n\n### [[Resonance Calendar]]:\n\n### Worksheet:\n  \n\n",
+    "uid" : "53975075-E9AA-4029-88FA-A074D5B2660B",
+    "name" : "Daily Notes",
+    "keyword" : ",dd"
+  }
+}

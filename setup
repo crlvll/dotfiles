@@ -1,0 +1,85 @@
+#!/bin/bash
+
+# This is the setup script for my config. The idea is to be able to run
+# this after cloning the repo on a Mac or Ubuntu (WSL) system and be up
+# and running very quickly.
+
+#~~~~~~~~~~~~~~~~~~~~~ create directories ~~~~~~~~~~~~
+export XDG_CONFIG_HOME="$HOME"/.config
+#mkdir -p "$XDG_CONFIG_HOME"/bash
+mkdir -p "$XDG_CONFIG_HOME"/alacritty
+mkdir -p "$XDG_CONFIG_HOME"/alacritty/themes
+mkdir -p "$XDG_CONFIG_HOME"/nvim
+#mkdir -p "$XDG_CONFIG_HOME"/
+# mkdir -p "$XDG_CONFIG_HOME"/wezterm
+
+# git clone https://github.com/alacritty/alacritty-theme "$XDG_CONFIG_HOME"/alacritty/themes
+
+
+#~~~~~~~~~~~~~ Let's install brews on Mac ~~~~~~~~~~~~
+# install brew
+# /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+# install brew packages
+# brew bundle
+
+
+
+
+#~~~~~~~~~~~~~ Symbolic links ~~~~~~~~~~~~~~~~~~~~
+
+# ln -s ./.amethyst.yml "$HOME"/.amethyst.yml
+ln -sf "$PWD/alacritty.toml" "$XDG_CONFIG_HOME"/alacritty/alacritty.toml
+#ln -sf "$PWD/k9s/skin.yml" "$XDG_CONFIG_HOME"/k9s/skin.yml
+ln -sf "$PWD/.oh-my-zsh" "$HOME/".oh-my-zsh
+ln -sf "$PWD/.p10k.zsh" "$HOME/".p10k.zsh
+ln -sf "$PWD/.zlogout" "$HOME/".zlogout
+ln -sf "$PWD/.zprofile" "$HOME"/.zprofile
+ln -sf "$PWD/.zshrc" "$HOME"/.zshrc
+ln -sf "$PWD/.inputrc" "$HOME"/.inputrc
+ln -sf "$PWD/.tmux.conf" "$HOME"/.tmux.conf
+ln -sf "$PWD/nvim" "$XDG_CONFIG_HOME"/nvim
+ln -sf "$PWD/Alfred.alfredpreferences" "$XDG_CONFIG_HOME"/Alfredpreferences
+ln -sf "$PWD/scripts/" "$XDG_CONFIG_HOME"/scripts
+# set up blog
+# git clone git@github.com:mischavandenburg/hugo-PaperModX-theme.git themes/PaperModX --depth=1
+
+# Second Brain
+#ln -sf "$SECOND_BRAIN" ~/Zettelkasten
+#
+# iCloud
+# export ICLOUD=("/Users/cyril/Library/Mobile Documents/com~apple~CloudDocs")
+# ln -sf "$ICLOUD" ~/icloud07-07-2024
+
+
+#~~~~~~~~~~~~~~~~~~~ get the font out of the way first ~~~~~~~~2024-07-07~
+cp $PWD/fonts/* $HOME/Library/Fonts/
+
+#~~~~~~~~~~~~~~~~~ install fonts on linux ~~~~~~~~~~
+# mkdir -p $HOME/.local/share/fonts
+# cp $PWD/fonts/UbuntuMono* $HOME/.local/share/fonts07-07-2024
+
+
+# ubuntu packages apt
+# sudo apt install ripgrep gh
+
+# ubuntu apt neovim setup
+# sudo apt install gcc g++ unzip
+
+# ubuntu brew for vim and neovim setup
+# sudo apt install fd fzf kubectl kubectx derailed/k9s/k9s starship
+
+# ubuntu brew for neovim setup
+# brew install neovim go lazygit
+
+# ubuntu specific notes
+# create symbolic link to neovim from vim when not using neovim on
+# Ubuntu systems, because I use the v alias everywhere.
+# sudo ln -sf /usr/bin/vim /usr/bin/nvim
+#
+
+# Fedora
+
+# brew install fd fzf ripgrep
+
+# /usr/bin/python3 -m pip install pynvim

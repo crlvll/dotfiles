@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "{{< marginnote >}}{cursor}{{< \/marginnote >}}",
+    "uid" : "7747917C-FBE4-449E-B1E3-868A5C72BCD1",
+    "name" : "Margin note",
+    "keyword" : "<m"
+  }
+}

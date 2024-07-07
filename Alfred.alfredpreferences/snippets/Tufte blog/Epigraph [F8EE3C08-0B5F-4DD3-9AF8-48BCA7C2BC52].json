@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "{{< epigraph pre=\"Moi-même, \" cite=\"Sur mon site internet\" link='https:\/\/www.cyrilvallee.com' >}}\n  Voici un exemple d'épigraphe.{cursor}\n{{< \/epigraph >}} ",
+    "uid" : "F8EE3C08-0B5F-4DD3-9AF8-48BCA7C2BC52",
+    "name" : "Epigraph",
+    "keyword" : "<e"
+  }
+}

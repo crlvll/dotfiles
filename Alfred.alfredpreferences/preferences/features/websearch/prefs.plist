@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>customSites</key>
+	<dict>
+		<key>67F31D0A-22C2-4477-A61A-171AE1242E56</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>amz</string>
+			<key>text</key>
+			<string>Chercher AMZ FR pour ...</string>
+			<key>url</key>
+			<string>https://www.amazon.fr/s/&amp;url=search-alias%3Daps&amp;field-keywords={query}</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
+		<key>908FBFA4-1319-4E92-8DB0-1DD220349883</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>kagi</string>
+			<key>text</key>
+			<string>Kagi search for '{query}'</string>
+			<key>url</key>
+			<string>https://kagi.com/search?token=fwAAfuqeUAU.N7z6kyDlBuVLnqcPHYclFqYTPba8yJUE8byTlw11_os=&amp;q={query}</string>
+		</dict>
+		<key>E95FC2B7-4C39-4C39-A49E-861189A0C9C8</key>
+		<dict>
+			<key>enabled</key>
+			<false/>
+			<key>keyword</key>
+			<string>start</string>
+			<key>text</key>
+			<string>Startpage.com</string>
+			<key>url</key>
+			<string>https://www.startpage.com</string>
+		</dict>
+		<key>FF7B5E47-5340-436E-81DF-17BDA9873C01</key>
+		<dict>
+			<key>enabled</key>
+			<false/>
+			<key>keyword</key>
+			<string>images</string>
+			<key>text</key>
+			<string>Search duckduckgo images</string>
+			<key>url</key>
+			<string>https://duckduckgo.com/?q={query}&amp;t=h_&amp;iax=images&amp;ia=images#</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "---\ntitle: \"\" \ndate: $|$ \ndraft: false\nslug: \"\" \nmeta: true\nsummary: \"\" \npopular: false\ncategories: \"blog\"\ntags: \"\" \n ---",
+    "uid" : "CC927874-7B6E-4DB7-8E0F-EF81ABF38519",
+    "name" : "Metadata for blog",
+    "keyword" : "bbl\ndraft: false\nslug: \"\" \nmeta: true\nsummary: \"\" \npopular: false\ncategories: \"blog\"\ntags: \"\" \n---\n"
+  }
+}

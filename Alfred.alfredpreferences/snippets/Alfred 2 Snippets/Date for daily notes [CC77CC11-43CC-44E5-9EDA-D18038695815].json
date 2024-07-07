@@ -1,0 +1,9 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "< [[daily_notes\/{date -1D}]] | [[daily_notes\/{date +1D}]] >",
+    "dontautoexpand" : true,
+    "uid" : "CC77CC11-43CC-44E5-9EDA-D18038695815",
+    "name" : "Date for daily notes",
+    "keyword" : "ddd"
+  }
+}

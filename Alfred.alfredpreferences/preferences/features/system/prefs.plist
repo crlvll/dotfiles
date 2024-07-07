@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ejectBlacklist</key>
+	<array>
+		<string>cyril</string>
+		<string>iMac</string>
+		<string>media</string>
+		<string>MobileBackups</string>
+		<string>Moebius</string>
+		<string>photo</string>
+		<string>video</string>
+	</array>
+	<key>ejectKeywordEnabled</key>
+	<true/>
+	<key>ejectType</key>
+	<integer>0</integer>
+	<key>ejectallKeyword</key>
+	<string>ee</string>
+	<key>ejectallKeywordEnabled</key>
+	<true/>
+</dict>
+</plist>

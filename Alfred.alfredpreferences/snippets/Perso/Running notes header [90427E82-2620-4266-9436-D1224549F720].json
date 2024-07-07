@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "#Running notes from\n\n# {cursor}\n\n## parQUI\n\nLien\n\n{datetime} | quelleCONFERENCE\n\npar\n\nCyril Vallée\n\ncyril.vallee@pm.me\n\n---",
+    "uid" : "90427E82-2620-4266-9436-D1224549F720",
+    "name" : "Running notes header",
+    "keyword" : ",rn"
+  }
+}

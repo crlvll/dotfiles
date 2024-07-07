@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "{date:dd-MM-yyyy}",
+    "uid" : "1D28658E-A748-4F97-A466-04BA9F88C6EB",
+    "name" : "Date ISO 8601",
+    "keyword" : "ddj"
+  }
+}

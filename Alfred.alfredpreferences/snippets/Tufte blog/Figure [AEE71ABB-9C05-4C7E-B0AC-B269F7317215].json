@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "{{< figure\n  src=\"https:\/\/edwardtufte.github.io\/tufte-css\/img\/napoleons-march.png\"\n  type=\"full\" or \"margin\"{cursor}\n  larg=\"100%\"\n  label=\"cv-\"\n  title=\"\"\n  caption=\"\"\n  attr=\"Image attribution\"\n  attrlink=\"\"\n  alt=\"\"\n  link=\"\"\n >}}",
+    "uid" : "AEE71ABB-9C05-4C7E-B0AC-B269F7317215",
+    "name" : "Figure",
+    "keyword" : "<f"
+  }
+}

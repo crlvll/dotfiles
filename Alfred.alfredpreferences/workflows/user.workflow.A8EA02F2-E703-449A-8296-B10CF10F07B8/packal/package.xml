@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<workflow>
+  <name>Search PubMed</name>
+  <version>1.2</version>
+  <bundle>com.tedwise.pubmed</bundle>
+  <updated>1399146284</updated>
+  <file>search_pubmed.alfredworkflow</file>
+</workflow>
