@@ -1,0 +1,14 @@
+NAME
+    obtf
+
+DESCRIPTION
+    obtf is designed to enable users to write, edit and search a txt file.
+
+usage: obtf [option...] Patterns
+    -a, --agenda        show entries containing the tags @agenda and @inbox  
+    -d,--date           insert line-break and date
+    -l, --longform      write longform note to file (via the tee program)
+    -n, --on            look at specified date
+    -o, -on-this-day    shows entries matching today's date from previous years
+    -r --remove         removes any lines containing a string 
+    -t, --tags          see all tags in alphabetical order (tags currentely set to use#) 
